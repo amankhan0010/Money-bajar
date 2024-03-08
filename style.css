@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(30, 30, 57, 0.8),
+      rgba(30, 30, 46, 0.8)
+    ),
+    url("https://media.istockphoto.com/id/1622055565/photo/future-financial-and-investment-theme-growth-your-wealth-in-2024.webp?b=1&s=170667a&w=0&k=20&c=TuNZ9snoNhKGQe65Fgt3ykiKMwv2BIS6FkaCKz0xBwg=");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-box {
+  height: 40vw;
+  min-width: 40vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 4vw;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 30px rgba();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signup-box h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.4vw;
+}
+.form-group {
+  position: relative;
+  width: 30vw;
+  margin: 25px 0;
+}
+.form-group input {
+  width: 100%;
+  height: 5vw;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1vw;
+  color: #fff;
+  padding: 0 30px 0 10px;
+}
+.form-group > label {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 1.2vw;
+  color: #fff;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -1px;
+}
+.form-group i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.2vw;
+}
+p {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+}
+#btn {
+  width: 100%;
+  height: 5vw;
+  border-radius: 4vw;
+  border: none;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+#btn:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+@media (max-width:600px) {
+  .signup-box {
+    height: 80vw;
+    min-width: 40vw;
+  }
+  .signup-box h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5vw;
+    margin-top: 8vw;
+  }
+  .form-group {
+    position: relative;
+    width: 70vw;
+    margin: 25px 0;
+  }
+  .form-group input {
+    width: 100%;
+    height: 2vw;
+  }
+  .form-group > label {
+    font-size: 3vw;
+  }
+  .form-group i {
+    font-size: 3vw;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 2.5vw;
+  }
+  #btn {
+    width: 70%;
+    height: 5vw;
+    border-radius: 4vw;
+    border: none;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 12vw;
+  }
+  #btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+}
